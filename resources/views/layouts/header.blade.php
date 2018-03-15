@@ -12,7 +12,6 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/default.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/menu.css') }}" rel="stylesheet">
     @yield('styles')
 </head>
 <body>
@@ -59,60 +58,9 @@
               </div>
           </div>
       </nav>
-<div class="container-fluid" id="tabs">
-
-
-
-  <div class="row" >
-    <div class="col-md">
-
-    </div>
-    <div class="col-md text-center">
-      <ul class="list-inline">
-        <li class="list-inline-item"><a class="text-xs-center" href="#tabs-1">Schoenen</a></li>
-        <li class="list-inline-item"><a class="text-xs-center" href="#tabs-2">Shorts</a></li>
-        <li class="list-inline-item"><a class="text-xs-center" href="#tabs-3">Shirts</a></li>
-      </ul>
-    </div>
-    <div class="col-md">
-      <form>
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search for...">
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="button">Go!</button>
-          </span>
-        </div>
-      </form>
-    </div>
-  </div>
-
+<div class="container-fluid">
   <div class="row">
-    <div class="col-md"></div>
-    <div class="col-md">
-      <div id="tabs-1">
-        <ul class="list-inline">
-          <li class="list-inline-item"><a class="text-center" href="#">Sub Category Nike</a></li> |
-          <li class="list-inline-item"><a class="text-center" href="#">Sub Category Adidas</a></li> |
-          <li class="list-inline-item"><a class="text-center" href="#">Sub Category Puma</a></li>
-        </ul>
-      </div>
-      <div id="tabs-2">
-        <ul class="list-inline">
-          <li class="list-inline-item"><a class="text-center" href="#">Sub Category shorts 1</a></li> |
-          <li class="list-inline-item"><a class="text-center" href="#">Sub Category shorts 2</a></li> |
-          <li class="list-inline-item"><a class="text-center" href="#">Sub Category shorts 3</a></li>
-        </ul>
-      </div>
-      <div id="tabs-3">
-        <ul class="list-inline">
-          <li class="list-inline-item"><a class="text-center" href="#">Sub Category shirts 1</a></li> |
-          <li class="list-inline-item"><a class="text-center" href="#">Sub Category shirts 2</a></li> |
-          <li class="list-inline-item"><a class="text-center" href="#">Sub Category shirts 3</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="col-md"></div>
-
+    <menu-bar></menu-bar>
   </div>
 
 
