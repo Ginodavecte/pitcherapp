@@ -2,9 +2,8 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
+
+
 
 
 
@@ -17,67 +16,55 @@
                   <div class="col-lg-4 col-sm-6 portfolio-item">
                     <div class="card h-100">
                       <h4 class="card-title">
-                        <a href="#">Project One</a>
+                        <a href="#">Category One</a>
                       </h4>
                       <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                      <div class="card-body">
-                        <p class="card-text"></p>
-                      </div>
+
                     </div>
                   </div>
                   <div class="col-lg-4 col-sm-6 portfolio-item">
                     <div class="card h-100">
                       <h4 class="card-title">
-                        <a href="#">Project Two</a>
+                        <a href="#">Category Two</a>
                       </h4>
                       <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                      <div class="card-body">
-                        <p class="card-text"></p>
-                      </div>
+
                     </div>
                   </div>
                   <div class="col-lg-4 col-sm-6 portfolio-item">
                     <div class="card h-100">
                       <h4 class="card-title">
-                        <a href="#">Project Three</a>
+                        <a href="#">Category Three</a>
                       </h4>
                       <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                      <div class="card-body">
-                        <p class="card-text"></p>
-                      </div>
+
                     </div>
                   </div>
                   <div class="col-lg-4 col-sm-6 portfolio-item">
                     <div class="card h-100">
                       <h4 class="card-title">
-                        <a href="#">Project Four</a>
+                        <a href="#">Category Four</a>
                       </h4>
                       <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                      <div class="card-body">
-                        <p class="card-text"></p>
-                      </div>
+
                     </div>
                   </div>
                   <div class="col-lg-4 col-sm-6 portfolio-item">
                     <div class="card h-100">
                       <h4 class="card-title">
-                        <a href="#">Project Five</a>
+                        <a href="#">Category Five</a>
                       </h4>
                       <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                      <div class="card-body">
-                        <p class="card-text"></p>
-                      </div>
+
                     </div>
                   </div>
                   <div class="col-lg-4 col-sm-6 portfolio-item">
                     <div class="card h-100">
                       <h4 class="card-title">
-                        <a href="#">Project Six</a>
+                        <a href="#">Category Six</a>
                       </h4>
                       <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                      <div class="card-body">
-                        <p class="card-text"></p>
-                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -86,8 +73,7 @@
 
 
 
-            </div>
-        </div>
-    </div>
+
+
 </div>
 @endsection
