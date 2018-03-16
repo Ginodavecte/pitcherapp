@@ -8,6 +8,7 @@ $(document).ready(function(){
     $("#product_list").show(1000);
     $("#product_block").hide(1000);
   });
+<<<<<<< 5bfe158a3ec017f6786688a0b9f659de8ca9c1e3
 
 
 
@@ -23,4 +24,21 @@ $(document).ready(function(){
     }
 
   });
+=======
+  $( function() {
+      $( "#slider-range" ).slider({
+        range: true,
+        min: 0,
+        max: 500,
+        values: [ 75, 300 ],
+        slide: function( event, ui ) {
+          $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+        }
+      });
+      $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+        " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+    } );
+
+
+>>>>>>> Category page
 });
