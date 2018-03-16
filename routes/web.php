@@ -21,3 +21,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('/categories', 'CategoriesController');
 Route::resource('/products', 'ProductsController');
+
+Route::resource('/contact', 'ContactController');
