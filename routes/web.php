@@ -14,6 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//Single prodct page
+Route::get('/product', function(){
+  return view('products/index');
+});
+
 
 Auth::routes();
 
