@@ -16,3 +16,7 @@ body {
 .pagination {
   margin-bottom: 30px;
 }
+
+#product_list{
+  display: none;
+}
