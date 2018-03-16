@@ -3,86 +3,339 @@
 @section('styles')
 <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 <link href="{{ asset('css/categories.css') }}" rel="stylesheet">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
 @endsection
 
 @section('content')
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-2 sb">
-      Sidebar left
+    <nav class="breadcrumb">
+      <a class="breadcrumb-item" href="#">Home</a>
+      <span class="breadcrumb-item active">Bootstrap</span>
+    </nav>
+  </div>
+  <div class="row">
+    <div class="col-md-2">
+      <div class="panel-group" role="tablist">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="collapseListGroupHeading1">
+            <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" href="#categories" aria-expanded="false" aria-controls="collapseListGroup1">
+                Categories
+              </a>
+            </h4>
+          </div>
+          <div id="categories" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading1">
+            <ul class="list-group">
+              <li class="list-group-item"><input type="checkbox" name="brand"> Category 1</li>
+              <li class="list-group-item"><input type="checkbox" name="brand"> Category 2</li>
+              <li class="list-group-item"><input type="checkbox" name="brand"> Category 3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-group" role="tablist">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="collapseListGroupHeading1">
+            <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" href="#brands" aria-expanded="false" aria-controls="collapseListGroup1">
+                Brands
+              </a>
+            </h4>
+          </div>
+          <div id="brands" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading1">
+            <ul class="list-group">
+              <li class="list-group-item"><input type="checkbox" name="brand"> Brand 1</li>
+              <li class="list-group-item"><input type="checkbox" name="brand"> Brand 2</li>
+              <li class="list-group-item"><input type="checkbox" name="brand"> Brand 3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-group" role="tablist">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="collapseListGroupHeading1">
+            <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" href="#color" aria-expanded="false" aria-controls="collapseListGroup1">
+                Color
+              </a>
+            </h4>
+          </div>
+          <div id="color" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading1">
+            <select class="form-control">
+              <option>Color 1</option>
+              <option>Color 2</option>
+              <option>Color 3</option>
+              <option>Color 4</option>
+              <option>Color 5</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-group" role="tablist">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="collapseListGroupHeading1">
+            <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" href="#size" aria-expanded="false" aria-controls="collapseListGroup1">
+                Size
+              </a>
+            </h4>
+          </div>
+          <div id="size" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading1">
+            <select class="form-control">
+              <option>Size 1</option>
+              <option>Size 2</option>
+              <option>Size 3</option>
+              <option>Size 4</option>
+              <option>Size 5</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-group" role="tablist">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="collapseListGroupHeading1">
+            <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" href="#price" aria-expanded="false" aria-controls="collapseListGroup1">
+                Price
+              </a>
+            </h4>
+          </div>
+          <div id="price" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading1">
+            <p><input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;"></p>
+            <div id="slider-range"></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-md-8 sb">
+
+    <div class="col-md-8">
       <div class="row">
         <div class="col-md">
           <div class="row">
-            <h1 class="my-4">Page Heading</h1>
+            <h1 class="my-4">Nike schoenen</h1>
           </div>
-        </div>
-        <div class="col-md">
-          <nav class="breadcrumb">
-            <a class="breadcrumb-item" href="#">Home</a>
-            <span class="breadcrumb-item active">Bootstrap</span>
-          </nav>
         </div>
         <div class="col-md">
           <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-secondary"><i class="fas fa-align-justify"></i></button>
-            <button type="button" class="btn btn-secondary"><i class="fas fa-th"></i></button>
+            <button id="list" type="button" class="btn btn-secondary"><i class="fas fa-align-justify"></i></button>
+            <button id="block" type="button" class="btn btn-secondary"><i class="fas fa-th"></i></button>
           </div>
-
-          </button>
         </div>
 
       </div>
-      <div class="row block">
+      <div class="row" id="product_block">
         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project Two</a>
-              </h4>
-              <p class="card-text">Product</p>
+          <img src="http://placehold.it/700x400" alt="img" class="img-thumbnail">
+          <div class="card-body">
+            <div class="row"> <p>Nike air 1</p> </div>
+            <div class="row">
+              <p>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </p>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="row list">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-          <div class="panel panel-default">
-            <div class="panel-header">
-              <div class="row">
-                <div class="col-md-6">
-                  <h3 class="panel-title">title</h3>
-                </div>
-                <div class="col-md-6">
-                  <h3 class="panel-title">Price</h3>
-                </div>
+            <div class="row"> <p>Price</p> </div>
+            <div class="row">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-success">Cart</button>
+                <button type="button" class="btn btn-info">Wishlist</button>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+          <img src="http://placehold.it/700x400" alt="img" class="img-thumbnail">
+          <div class="card-body">
+            <div class="row"> <p>Nike air 1</p> </div>
+            <div class="row">
+              <p>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </p>
+            </div>
+            <div class="row"> <p>Price</p> </div>
+            <div class="row">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-success">Cart</button>
+                <button type="button" class="btn btn-info">Wishlist</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+          <img src="http://placehold.it/700x400" alt="img" class="img-thumbnail">
+          <div class="card-body">
+            <div class="row"> <p>Nike air 1</p> </div>
+            <div class="row">
+              <p>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </p>
+            </div>
+            <div class="row"> <p>Price</p> </div>
+            <div class="row">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-success">Cart</button>
+                <button type="button" class="btn btn-info">Wishlist</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+          <img src="http://placehold.it/700x400" alt="img" class="img-thumbnail">
+          <div class="card-body">
+            <div class="row"> <p>Nike air 1</p> </div>
+            <div class="row">
+              <p>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </p>
+            </div>
+            <div class="row"> <p>Price</p> </div>
+            <div class="row">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-success">Cart</button>
+                <button type="button" class="btn btn-info">Wishlist</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="product_list">
+        <div class="col-lg-12 col-md-12 col-sm-12 mb-3">
+          <div class="panel panel-default">
             <div class="panel-body">
               <div class="row">
-                <div class="col-md-3">
-                  <img class="card-img-top" src="http://placehold.it/700x400" alt="">
+                <div class="col-md-4">
+                  <img src="http://placehold.it/700x400" alt="img" class="img-thumbnail">
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-5">
+                  <div class="row"> <p>Nike air max 1</p> </div>
                   <div class="row">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </p>
                   </div>
+                  <div class="row">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui gravida, rhoncus orci ut, bibendum erat. Pellentesque sollicitudin varius.</div>
+                </div>
+                <div class="col-md-3">
+                  <div class="row"><button type="button" class="btn btn-success">Add to cart</button></div>
+                  <div class="row"><button type="button" class="btn btn-info">Add to wishlist</button></div>
                 </div>
               </div>
             </div>
-            <div class="panel-footer">
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 mb-3">
+          <div class="panel panel-default">
+            <div class="panel-body">
               <div class="row">
-                <button type="button" class="btn btn-default ml-auto">button</button>
+                <div class="col-md-4">
+                  <img src="http://placehold.it/700x400" alt="img" class="img-thumbnail">
+                </div>
+                <div class="col-md-5">
+                  <div class="row"> <p>Nike air max 1</p> </div>
+                  <div class="row">
+                    <p>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </p>
+                  </div>
+                  <div class="row">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui gravida, rhoncus orci ut, bibendum erat. Pellentesque sollicitudin varius.</div>
+                </div>
+                <div class="col-md-3">
+                  <div class="row"><button type="button" class="btn btn-success">Add to cart</button></div>
+                  <div class="row"><button type="button" class="btn btn-info">Add to wishlist</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 mb-3">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="http://placehold.it/700x400" alt="img" class="img-thumbnail">
+                </div>
+                <div class="col-md-5">
+                  <div class="row"> <p>Nike air max 1</p> </div>
+                  <div class="row">
+                    <p>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </p>
+                  </div>
+                  <div class="row">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui gravida, rhoncus orci ut, bibendum erat. Pellentesque sollicitudin varius.</div>
+                </div>
+                <div class="col-md-3">
+                  <div class="row"><button type="button" class="btn btn-success">Add to cart</button></div>
+                  <div class="row"><button type="button" class="btn btn-info">Add to wishlist</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 mb-3">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="http://placehold.it/700x400" alt="img" class="img-thumbnail">
+                </div>
+                <div class="col-md-5">
+                  <div class="row"> <p>Nike air max 1</p> </div>
+                  <div class="row">
+                    <p>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </p>
+                  </div>
+                  <div class="row">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui gravida, rhoncus orci ut, bibendum erat. Pellentesque sollicitudin varius.</div>
+                </div>
+                <div class="col-md-3">
+                  <div class="row"><button type="button" class="btn btn-success">Add to cart</button></div>
+                  <div class="row"><button type="button" class="btn btn-info">Add to wishlist</button></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
-    <div class="col-md-2 sb">
+    <div class="col-md-2">
       Sidebar right
     </div>
   </div>
@@ -115,4 +368,8 @@
 
 </div>
 <!-- /.container -->
+@endsection
+@section('scripts')
+<script type="text/javascript" src="{{ asset('js/categories.js') }}"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 @endsection
