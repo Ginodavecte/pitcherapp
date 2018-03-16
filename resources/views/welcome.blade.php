@@ -13,7 +13,7 @@
                 </h1>
 
                 <div class="row">
-                  <div class="col-lg-4 col-sm-6 portfolio-item">
+                  <div class="col-lg-4 col-sm-6 portfolio-item mt-5">
                     <div class="card h-100">
                       <h4 class="card-title">
                         <a href="#">Category One</a>
@@ -22,7 +22,7 @@
 
                     </div>
                   </div>
-                  <div class="col-lg-4 col-sm-6 portfolio-item">
+                  <div class="col-lg-4 col-sm-6 portfolio-item mt-5">
                     <div class="card h-100">
                       <h4 class="card-title">
                         <a href="#">Category Two</a>
@@ -31,7 +31,7 @@
 
                     </div>
                   </div>
-                  <div class="col-lg-4 col-sm-6 portfolio-item">
+                  <div class="col-lg-4 col-sm-6 portfolio-item mt-5">
                     <div class="card h-100">
                       <h4 class="card-title">
                         <a href="#">Category Three</a>
@@ -40,7 +40,7 @@
 
                     </div>
                   </div>
-                  <div class="col-lg-4 col-sm-6 portfolio-item">
+                  <div class="col-lg-4 col-sm-6 portfolio-item mt-5">
                     <div class="card h-100">
                       <h4 class="card-title">
                         <a href="#">Category Four</a>
@@ -49,7 +49,7 @@
 
                     </div>
                   </div>
-                  <div class="col-lg-4 col-sm-6 portfolio-item">
+                  <div class="col-lg-4 col-sm-6 portfolio-item mt-5">
                     <div class="card h-100">
                       <h4 class="card-title">
                         <a href="#">Category Five</a>
@@ -58,7 +58,7 @@
 
                     </div>
                   </div>
-                  <div class="col-lg-4 col-sm-6 portfolio-item">
+                  <div class="col-lg-4 col-sm-6 portfolio-item mt-5">
                     <div class="card h-100">
                       <h4 class="card-title">
                         <a href="#">Category Six</a>
