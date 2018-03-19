@@ -35,7 +35,11 @@ return  [
   'country:' => 'Country:',
   'first_name:' => 'First Name:',
   'last_name:' => 'Last Name:',
+<<<<<<< e10aa8e6ffdc168ddc81381a5c0392af10cc0048
   'address:' => 'Address:',
+=======
+  'adress:' => 'Address:',
+>>>>>>> PB-1
   'city:' => 'City:',
   'state:' => 'State:',
   'zip_postal_code:' => 'Zip / Postal Code:',
