@@ -13942,7 +13942,9 @@ module.exports = Cancel;
 /* harmony default export */ __webpack_exports__["a"] = ({
   data: function data() {
     return {
-      active: 'home'
+      active: 'home',
+      url1: "http://localhost:8000/",
+      url2: "/categories"
     };
   },
 
@@ -47291,7 +47293,7 @@ var render = function() {
                 "a",
                 {
                   staticClass: "nav-link home",
-                  attrs: { href: "#" },
+                  attrs: { href: _vm.url1 },
                   on: {
                     mouseover: function($event) {
                       _vm.makeActive("home")
@@ -47307,7 +47309,7 @@ var render = function() {
                 "a",
                 {
                   staticClass: "nav-link projects",
-                  attrs: { href: "#" },
+                  attrs: { href: "http://localhost:8000/categories" },
                   on: {
                     mouseover: function($event) {
                       _vm.makeActive("schoenen")
