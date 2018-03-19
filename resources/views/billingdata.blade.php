@@ -458,6 +458,25 @@
                 <div id="creditcard" class="container tab-pane active">
                   <div class="card-body">
                     <div class="form-group">
+                      <div class="form-group">
+                        <span>Pay secure using your credit card.</span>
+                      </div>
+                      <div class="form-group">
+
+                        <img class="img-responsive" src="http://i76.imgup.net/accepted_c22e0.png">
+
+                        <!-- <ul class="cards">
+                                            <li class="visa hand">Visa</li>
+                                            <li class="mastercard hand">MasterCard</li>
+                                            <li class="amex hand">Amex</li> -->
+                        <!-- <li><i class="fa fa-cc-visa"></i></li>
+                                            <li><i class="fa fa-cc-mastercard"></i></li>
+                                            <li><i class="fa fa-cc-amex"></i></li> -->
+                        <!-- </ul> -->
+
+                      </div>
+                    </div>
+                    <div class="form-group">
                       <div class="form-group"><strong>Card Type:</strong></div>
                       <div class="form-group">
                         <select id="CreditCardType" name="CreditCardType" class="form-control">
@@ -514,25 +533,6 @@
                                             <option value="2025">2025</option>
                                     </select>
                         </div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="form-group">
-                        <span>Pay secure using your credit card.</span>
-                      </div>
-                      <div class="form-group">
-
-                        <img class="img-responsive float-right" src="http://i76.imgup.net/accepted_c22e0.png">
-
-                        <!-- <ul class="cards">
-                                            <li class="visa hand">Visa</li>
-                                            <li class="mastercard hand">MasterCard</li>
-                                            <li class="amex hand">Amex</li> -->
-                        <!-- <li><i class="fa fa-cc-visa"></i></li>
-                                            <li><i class="fa fa-cc-mastercard"></i></li>
-                                            <li><i class="fa fa-cc-amex"></i></li> -->
-                        <!-- </ul> -->
-
                       </div>
                     </div>
                     <div class="form-group">
