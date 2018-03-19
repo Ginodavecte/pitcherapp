@@ -48,9 +48,9 @@ class MainCategoryController extends Controller
      * @param  \App\main_category  $main_category
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(main_category $main_category)
     {
-       //
+        //
     }
 
     /**
