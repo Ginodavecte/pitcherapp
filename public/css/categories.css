@@ -31,3 +31,7 @@ background-size: cover;
 #tabs-1, #tabs-2, #tabs-3{
   padding: 0;
 }
+
+#product_list{
+  display: none;
+}

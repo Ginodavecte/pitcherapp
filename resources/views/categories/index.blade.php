@@ -74,11 +74,10 @@
             </div>
           </div>
         </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-6 filter nike black shoes">
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
           <img src="http://placehold.it/700x400" alt="img" class="img-thumbnail">
           <div class="card-body">
-            <div class="row"> <p>Nike air 1 - black</p> </div>
+            <div class="row"> <p>Nike air 1</p> </div>
             <div class="row">
               <p>
                 <i class="far fa-star"></i>
@@ -97,11 +96,32 @@
             </div>
           </div>
         </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-6 filter filla red shirts">
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
           <img src="http://placehold.it/700x400" alt="img" class="img-thumbnail">
           <div class="card-body">
-            <div class="row"> <p>Filla - red - shirt</p> </div>
+            <div class="row"> <p>Nike air 1</p> </div>
+            <div class="row">
+              <p>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </p>
+            </div>
+            <div class="row"> <p>Price</p> </div>
+            <div class="row">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-success">Cart</button>
+                <button type="button" class="btn btn-info">Wishlist</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+          <img src="http://placehold.it/700x400" alt="img" class="img-thumbnail">
+          <div class="card-body">
+            <div class="row"> <p>Nike air 1</p> </div>
             <div class="row">
               <p>
                 <i class="far fa-star"></i>
@@ -241,7 +261,7 @@
       </div>
     </div>
     <div class="col-md-2">
-
+      Sidebar right
     </div>
   </div>
 </div>
