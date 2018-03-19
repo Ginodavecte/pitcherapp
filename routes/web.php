@@ -14,6 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//Single product page
+Route::get('/product', function(){
+   return view('products/index');
+});
+//Shopcart page
+Route::get('/shopcart',function(){
+  return view('shopcart');
+});
 
 Auth::routes();
 
