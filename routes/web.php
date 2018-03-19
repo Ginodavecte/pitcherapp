@@ -28,3 +28,7 @@ Route::resource('/categories', 'CategoriesController');
 Route::resource('/products', 'ProductsController');
 
 Route::resource('/contact', 'ContactController');
+
+Route::get('/billingdata', function () {
+    return view('billingdata');
+});
