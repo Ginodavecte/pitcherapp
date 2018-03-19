@@ -9,16 +9,20 @@ $(document).ready(function(){
     $("#product_block").hide(1000);
   });
 
-
-
-
+  $( function() {
+    $( "#tabs" ).tabs({
+      event: "mouseover"
+    });
+  } );
 /* Product filter */
   $(".button").click(function(){
     var value = $(this).attr("data-filter");
     if(value == "all"){
-      $(".filter").show();
+      $(".filter").show(1000);
     }else{
-      $(".filter").not("."+value).hide();
-      $(".filter").filter("."+value).show();
+      $(".filter").not("."+value).hide(1000);
+      $(".filter").filter("."+value).show(1000);
     }
+
   });
+});
