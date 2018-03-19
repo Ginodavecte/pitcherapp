@@ -18,6 +18,10 @@ Route::get('/', function () {
 Route::get('/product', function(){
   return view('products/index');
 });
+//Shopping cart page
+Route::get('/shopcart', function(){
+  return view('/shopcart');
+});
 
 
 Auth::routes();
