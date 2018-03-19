@@ -1,14 +1,7 @@
 @extends('layouts.app')
 
 @section('styles')
-<<<<<<< c3c6b380562e30b26792088049d00efea40a44aa
   <link href="{{ asset('css/categories.css') }}" rel="stylesheet">
-=======
-<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-<link href="{{ asset('css/categories.css') }}" rel="stylesheet">
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<link rel="stylesheet" href="/resources/demos/style.css">
->>>>>>> Category page
 @endsection
 
 @section('content')
