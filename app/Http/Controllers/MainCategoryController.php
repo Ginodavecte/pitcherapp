@@ -14,7 +14,10 @@ class MainCategoryController extends Controller
      */
     public function index()
     {
-        //
+      //$categories = Maincategory::with('products', 'colors')->get();
+      $products = Product::with('maincategories', 'colors', 'sizes')->get();
+      return $products[0];
+      return view('categories.index');
     }
 
     /**
