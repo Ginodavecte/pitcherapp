@@ -1,9 +1,7 @@
 @extends('layouts.app')
 
 @section('styles')
-<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-<link href="{{ asset('css/categories.css') }}" rel="stylesheet">
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link href="{{ asset('css/categories.css') }}" rel="stylesheet">
 @endsection
 
 @section('content')
@@ -276,5 +274,4 @@
 @endsection
 @section('scripts')
 <script type="text/javascript" src="{{ asset('js/categories.js') }}"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 @endsection
