@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Products;
+use App\Color;
 use Illuminate\Http\Request;
 
-class ProductsController extends Controller
+class ColorController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class ProductsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Products  $products
+     * @param  \App\Color  $color
      * @return \Illuminate\Http\Response
      */
-    public function show(Products $products)
+    public function show(Color $color)
     {
         //
     }
@@ -52,10 +52,10 @@ class ProductsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Products  $products
+     * @param  \App\Color  $color
      * @return \Illuminate\Http\Response
      */
-    public function edit(Products $products)
+    public function edit(Color $color)
     {
         //
     }
@@ -64,10 +64,10 @@ class ProductsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Products  $products
+     * @param  \App\Color  $color
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Products $products)
+    public function update(Request $request, Color $color)
     {
         //
     }
@@ -75,10 +75,10 @@ class ProductsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Products  $products
+     * @param  \App\Color  $color
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Products $products)
+    public function destroy(Color $color)
     {
         //
     }

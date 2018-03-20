@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\main_category;
+use App\Maincategory;
+use App\Product;
 use Illuminate\Http\Request;
 
 class MainCategoryController extends Controller
@@ -14,7 +15,10 @@ class MainCategoryController extends Controller
      */
     public function index()
     {
-        //
+      //$categories = Maincategory::with('products', 'colors')->get();
+      $products = Product::with('maincategories', 'colors', 'sizes')->get();
+
+      return view('categories.index');
     }
 
     /**
@@ -44,9 +48,9 @@ class MainCategoryController extends Controller
      * @param  \App\main_category  $main_category
      * @return \Illuminate\Http\Response
      */
-    public function show(main_category $main_category)
+    public function show($id)
     {
-        //
+       //
     }
 
     /**
