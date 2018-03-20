@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\MainCategory;
+use App\Maincategory;
 class MainCategoriesTableSeeder extends Seeder
 {
     /**
@@ -11,17 +11,17 @@ class MainCategoriesTableSeeder extends Seeder
      */
     public function run()
     {
-        MainCategory::create([
+        Maincategory::create([
           'name' => 'Shoes',
           'slug' => 'shoes',
         ]);
 
-        MainCategory::create([
+        Maincategory::create([
           'name' => 'Clothing',
           'slug' => 'clothing',
         ]);
 
-        MainCategory::create([
+        Maincategory::create([
           'name' => 'Accessories',
           'slug' => 'accessories',
         ]);

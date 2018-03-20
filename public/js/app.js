@@ -13938,6 +13938,26 @@ module.exports = Cancel;
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["a"] = ({
   data: function data() {
@@ -47273,280 +47293,292 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
-    _c("div", { staticClass: "row justify-content-center" }, [
-      _c(
-        "nav",
-        {
-          staticClass: " navbar navbar-inverse bg-inverse navbar-toggleable-md",
-          class: _vm.active,
-          on: {
-            click: function($event) {
-              $event.preventDefault()
-            }
-          }
-        },
-        [
-          _c("ul", { staticClass: "list-inline" }, [
-            _c("li", { staticClass: "list-inline-item" }, [
-              _c(
-                "a",
-                {
-                  staticClass: "nav-link home",
-                  attrs: { href: _vm.url1 },
-                  on: {
-                    mouseover: function($event) {
-                      _vm.makeActive("home")
-                    }
-                  }
-                },
-                [_vm._v("Home")]
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "list-inline-item" }, [
-              _c(
-                "a",
-                {
-                  staticClass: "nav-link projects",
-                  attrs: { href: "http://localhost:8000/categories" },
-                  on: {
-                    mouseover: function($event) {
-                      _vm.makeActive("schoenen")
-                    }
-                  }
-                },
-                [_vm._v("Voetballschoenen")]
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "list-inline-item" }, [
-              _c(
-                "a",
-                {
-                  staticClass: "nav-link services",
-                  attrs: { href: "#" },
-                  on: {
-                    mouseover: function($event) {
-                      _vm.makeActive("shirts")
-                    }
-                  }
-                },
-                [_vm._v("Kleding")]
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "list-inline-item" }, [
-              _c(
-                "a",
-                {
-                  staticClass: "nav-link contact",
-                  attrs: { href: "#" },
-                  on: {
-                    mouseover: function($event) {
-                      _vm.makeActive("shorts")
-                    }
-                  }
-                },
-                [_vm._v("Accessoires")]
-              )
-            ])
-          ])
-        ]
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "row justify-content-center" }, [
-      _vm.active == "schoenen"
-        ? _c(
-            "nav",
-            {
-              staticClass:
-                "navbar navbar-inverse bg-inverse navbar-toggleable-md"
-            },
-            [_vm._m(0)]
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      _vm.active == "shirts"
-        ? _c(
-            "nav",
-            {
-              staticClass:
-                "navbar navbar-inverse bg-inverse navbar-toggleable-md"
-            },
-            [_vm._m(1)]
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      _vm.active == "shorts"
-        ? _c(
-            "nav",
-            {
-              staticClass:
-                "navbar navbar-inverse bg-inverse navbar-toggleable-md"
-            },
-            [_vm._m(2)]
-          )
-        : _vm._e()
-    ])
-  ])
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "list-inline" }, [
-      _c("li", { staticClass: "list-inline-item" }, [
-        _c("a", { staticClass: "nav-link home", attrs: { href: "#" } }, [
-          _vm._v("Merk")
+    return _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "panel-group", attrs: { role: "tablist" } }, [
+        _c("div", { staticClass: "panel panel-default" }, [
+          _c(
+            "div",
+            {
+              staticClass: "panel-heading",
+              attrs: { role: "tab", id: "collapseListGroupHeading1" }
+            },
+            [
+              _c("h4", { staticClass: "panel-title" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "collapsed",
+                    attrs: {
+                      "data-toggle": "collapse",
+                      href: "#categories",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseListGroup1"
+                    }
+                  },
+                  [_vm._v("\n            Categories\n          ")]
+                )
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "panel-collapse collapse",
+              attrs: {
+                id: "categories",
+                role: "tabpanel",
+                "aria-labelledby": "collapseListGroupHeading1"
+              }
+            },
+            [
+              _c("ul", { staticClass: "list-group" }, [
+                _c("li", { staticClass: "list-group-item" }, [
+                  _c("input", { attrs: { type: "checkbox", name: "brand" } }),
+                  _vm._v(" Category 1")
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "list-group-item" }, [
+                  _c("input", { attrs: { type: "checkbox", name: "brand" } }),
+                  _vm._v(" Category 2")
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "list-group-item" }, [
+                  _c("input", { attrs: { type: "checkbox", name: "brand" } }),
+                  _vm._v(" Category 3")
+                ])
+              ])
+            ]
+          )
         ])
       ]),
       _vm._v(" "),
-      _c("li", { staticClass: "list-inline-item" }, [
-        _c("a", { staticClass: "nav-link projects", attrs: { href: "#" } }, [
-          _vm._v("Ondergrond")
+      _c("div", { staticClass: "panel-group", attrs: { role: "tablist" } }, [
+        _c("div", { staticClass: "panel panel-default" }, [
+          _c(
+            "div",
+            {
+              staticClass: "panel-heading",
+              attrs: { role: "tab", id: "collapseListGroupHeading1" }
+            },
+            [
+              _c("h4", { staticClass: "panel-title" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "collapsed",
+                    attrs: {
+                      "data-toggle": "collapse",
+                      href: "#brands",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseListGroup1"
+                    }
+                  },
+                  [_vm._v("\n            Brands\n          ")]
+                )
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "panel-collapse collapse",
+              attrs: {
+                id: "brands",
+                role: "tabpanel",
+                "aria-labelledby": "collapseListGroupHeading1"
+              }
+            },
+            [
+              _c("ul", { staticClass: "list-group" }, [
+                _c("li", { staticClass: "list-group-item" }, [
+                  _c("input", { attrs: { type: "checkbox", name: "brand" } }),
+                  _vm._v(" Brand 1")
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "list-group-item" }, [
+                  _c("input", { attrs: { type: "checkbox", name: "brand" } }),
+                  _vm._v(" Brand 2")
+                ]),
+                _vm._v(" "),
+                _c("li", { staticClass: "list-group-item" }, [
+                  _c("input", { attrs: { type: "checkbox", name: "brand" } }),
+                  _vm._v(" Brand 3")
+                ])
+              ])
+            ]
+          )
         ])
       ]),
       _vm._v(" "),
-      _c("li", { staticClass: "list-inline-item" }, [
-        _c("a", { staticClass: "nav-link services", attrs: { href: "#" } }, [
-          _vm._v("Accessoires")
+      _c("div", { staticClass: "panel-group", attrs: { role: "tablist" } }, [
+        _c("div", { staticClass: "panel panel-default" }, [
+          _c(
+            "div",
+            {
+              staticClass: "panel-heading",
+              attrs: { role: "tab", id: "collapseListGroupHeading1" }
+            },
+            [
+              _c("h4", { staticClass: "panel-title" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "collapsed",
+                    attrs: {
+                      "data-toggle": "collapse",
+                      href: "#color",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseListGroup1"
+                    }
+                  },
+                  [_vm._v("\n            Color\n          ")]
+                )
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "panel-collapse collapse",
+              attrs: {
+                id: "color",
+                role: "tabpanel",
+                "aria-labelledby": "collapseListGroupHeading1"
+              }
+            },
+            [
+              _c("select", { staticClass: "form-control" }, [
+                _c("option", [_vm._v("Color 1")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Color 2")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Color 3")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Color 4")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Color 5")])
+              ])
+            ]
+          )
         ])
       ]),
       _vm._v(" "),
-      _c("li", { staticClass: "list-inline-item" }, [
-        _c("a", { staticClass: "nav-link contact", attrs: { href: "#" } }, [
-          _vm._v("Kids")
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "list-inline" }, [
-      _c("li", { staticClass: "list-inline-item" }, [
-        _c("a", { staticClass: "nav-link home", attrs: { href: "#" } }, [
-          _vm._v("Trainingskleding")
-        ])
-      ]),
-      _vm._v(" "),
-      _c("li", { staticClass: "list-inline-item" }, [
-        _c("a", { staticClass: "nav-link projects", attrs: { href: "#" } }, [
-          _vm._v("Onderkleding")
-        ])
-      ]),
-      _vm._v(" "),
-      _c("li", { staticClass: "list-inline-item" }, [
-        _c("a", { staticClass: "nav-link services", attrs: { href: "#" } }, [
-          _vm._v("Teamkleding")
-        ])
-      ]),
-      _vm._v(" "),
-      _c("li", { staticClass: "list-inline-item" }, [
-        _c("a", { staticClass: "nav-link contact", attrs: { href: "#" } }, [
-          _vm._v("Clubs")
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", { staticClass: "list-inline" }, [
-      _c("li", { staticClass: "list-inline-item dropdown" }, [
-        _c(
-          "a",
-          {
-            staticClass: "dropdown-toggle nav-link contact",
-            attrs: { "data-toggle": "dropdown", href: "#" }
-          },
-          [_vm._v("Ballen "), _c("b", { staticClass: "caret" })]
-        ),
-        _vm._v(" "),
-        _c("ul", { staticClass: "dropdown-menu" }, [
-          _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Ballen")])]),
+      _c("div", { staticClass: "panel-group", attrs: { role: "tablist" } }, [
+        _c("div", { staticClass: "panel panel-default" }, [
+          _c(
+            "div",
+            {
+              staticClass: "panel-heading",
+              attrs: { role: "tab", id: "collapseListGroupHeading1" }
+            },
+            [
+              _c("h4", { staticClass: "panel-title" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "collapsed",
+                    attrs: {
+                      "data-toggle": "collapse",
+                      href: "#size",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseListGroup1"
+                    }
+                  },
+                  [_vm._v("\n            Size\n          ")]
+                )
+              ])
+            ]
+          ),
           _vm._v(" "),
-          _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Ballen")])]),
-          _vm._v(" "),
-          _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Ballen")])]),
-          _vm._v(" "),
-          _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Ballen")])])
+          _c(
+            "div",
+            {
+              staticClass: "panel-collapse collapse",
+              attrs: {
+                id: "size",
+                role: "tabpanel",
+                "aria-labelledby": "collapseListGroupHeading1"
+              }
+            },
+            [
+              _c("select", { staticClass: "form-control" }, [
+                _c("option", [_vm._v("Size 1")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Size 2")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Size 3")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Size 4")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Size 5")])
+              ])
+            ]
+          )
         ])
       ]),
       _vm._v(" "),
-      _c("li", { staticClass: "list-inline-item dropdown" }, [
-        _c(
-          "a",
-          {
-            staticClass: "dropdown-toggle nav-link contact",
-            attrs: { "data-toggle": "dropdown", href: "#" }
-          },
-          [_vm._v("Uitrusting "), _c("b", { staticClass: "caret" })]
-        ),
-        _vm._v(" "),
-        _c("ul", { staticClass: "dropdown-menu" }, [
-          _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Shirts")])]),
+      _c("div", { staticClass: "panel-group", attrs: { role: "tablist" } }, [
+        _c("div", { staticClass: "panel panel-default" }, [
+          _c(
+            "div",
+            {
+              staticClass: "panel-heading",
+              attrs: { role: "tab", id: "collapseListGroupHeading1" }
+            },
+            [
+              _c("h4", { staticClass: "panel-title" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "collapsed",
+                    attrs: {
+                      "data-toggle": "collapse",
+                      href: "#price",
+                      "aria-expanded": "false",
+                      "aria-controls": "collapseListGroup1"
+                    }
+                  },
+                  [_vm._v("\n            Price\n          ")]
+                )
+              ])
+            ]
+          ),
           _vm._v(" "),
-          _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Shirts")])]),
-          _vm._v(" "),
-          _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Shirts")])]),
-          _vm._v(" "),
-          _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Shirts")])])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("li", { staticClass: "list-inline-item dropdown" }, [
-        _c(
-          "a",
-          {
-            staticClass: "dropdown-toggle nav-link contact",
-            attrs: { "data-toggle": "dropdown", href: "#" }
-          },
-          [_vm._v("Bescherming "), _c("b", { staticClass: "caret" })]
-        ),
-        _vm._v(" "),
-        _c("ul", { staticClass: "dropdown-menu" }, [
-          _c("li", [
-            _c("a", { attrs: { href: "#" } }, [_vm._v("Scheenbeschermers")])
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "#" } }, [_vm._v("Scheenbeschermers")])
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "#" } }, [_vm._v("Scheenbeschermers")])
-          ]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "#" } }, [_vm._v("Scheenbeschermers")])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("li", { staticClass: "list-inline-item dropdown" }, [
-        _c(
-          "a",
-          {
-            staticClass: "dropdown-toggle nav-link contact",
-            attrs: { "data-toggle": "dropdown", href: "#" }
-          },
-          [_vm._v("Keepers "), _c("b", { staticClass: "caret" })]
-        ),
-        _vm._v(" "),
-        _c("ul", { staticClass: "dropdown-menu" }, [
-          _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Shirts")])]),
-          _vm._v(" "),
-          _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Shorts")])]),
-          _vm._v(" "),
-          _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Helm")])]),
-          _vm._v(" "),
-          _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Doel")])])
+          _c(
+            "div",
+            {
+              staticClass: "panel-collapse collapse",
+              attrs: {
+                id: "price",
+                role: "tabpanel",
+                "aria-labelledby": "collapseListGroupHeading1"
+              }
+            },
+            [
+              _c("p", [
+                _c("input", {
+                  staticStyle: {
+                    border: "0",
+                    color: "#f6931f",
+                    "font-weight": "bold"
+                  },
+                  attrs: { type: "text", id: "amount", readonly: "" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { attrs: { id: "slider-range" } })
+            ]
+          )
         ])
       ])
     ])

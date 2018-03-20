@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class maincategory extends Model
+class Maincategory extends Model
 {
   public function products(){
     return $this->belongsToMany('App\Product');
