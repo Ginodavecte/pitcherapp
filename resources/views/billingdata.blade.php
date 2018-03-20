@@ -2,7 +2,6 @@
 
 @section('styles')
 <link href="{{ asset('css/payment/order-status.css') }}" type="text/css" rel="stylesheet">
-<link href="{{ asset('css/productpage/related-product-slider.css') }}" type="text/css" rel="stylesheet">
 <link href="{{ asset('css/payment/shopping-cart.css') }}" type="text/css" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 @endsection
@@ -107,7 +106,7 @@
             <!--SHIPPING METHOD END-->
             <!--CREDIT CART PAYMENT-->
             <div class="card mt-5" style="border-color: #999;">
-              <div class="card-header" style="color: #eee; background-image: linear-gradient(to bottom, #555 0px, #888 100%);"><span><i class="fas fa-lock"></i></span>Secure Payment</div>
+              <div class="card-header" style="color: #eee; background-image: linear-gradient(to bottom, #555 0px, #888 100%);"><span><i class="fa fa-lock"></i></span> Secure Payment</div>
               <ul class="nav nav-tabs" role="tablist">
                 <li class="nav-item">
                   <a class="nav-link active" data-toggle="tab" href="#creditcard">@lang('messages.creditcard')</a>
@@ -128,18 +127,7 @@
                         <span>@lang('messages.secure_creditcard')</span>
                       </div>
                       <div class="form-group">
-
-                        <img class="img-responsive" src="http://i76.imgup.net/accepted_c22e0.png">
-
-                        <!-- <ul class="cards">
-                                            <li class="visa hand">Visa</li>
-                                            <li class="mastercard hand">MasterCard</li>
-                                            <li class="amex hand">Amex</li> -->
-                        <!-- <li><i class="fa fa-cc-visa"></i></li>
-                                            <li><i class="fa fa-cc-mastercard"></i></li>
-                                            <li><i class="fa fa-cc-amex"></i></li> -->
-                        <!-- </ul> -->
-
+                        <img class="img-responsive" src="{{ URL::to('/') }}/img/billingdatapage/accepted_c22e0.png" />
                       </div>
                     </div>
                     <div class="form-group">
@@ -202,19 +190,35 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-submit-fix">@lang('messages.place_order')</button>
-                      </div>
+                      <button type="submit" class="btn btn-primary btn-submit-fix">@lang('messages.place_order')</button>
                     </div>
                   </div>
                 </div>
                 <div id="paypal" class="container tab-pane fade">
-                  <h3>Menu 1</h3>
-                  <p>Some content in menu 1.</p>
+                  <div class="form-group">
+                    <a href="#"><img class="img-responsive" src="{{ URL::to('/') }}/img/billingdatapage/CletbnhXEAEWZ2h.jpg" /></a>
+                  </div>
+
                 </div>
                 <div id="ideal" class="container tab-pane fade">
-                  <h3>Menu 2</h3>
-                  <p>Some content in menu 2.</p>
+                  <div class="form-group">
+                    <div class="form-group">
+                      <img class="img-fluid" src="{{ URL::to('/') }}/img/billingdatapage/IDEAL_Logo.png" />
+                    </div>
+                    <div class="form-group"><strong>@lang('messages.choose_bank:')</strong></div>
+                    <div class="form-group">
+                      <select id="bankname" name="bankname" class="form-control">
+                        <option value="abn">ABN-AMRO</option>
+                        <option value="rabo">Rabobank</option>
+                        <option value="ing">ING bank</option>
+                        <option value="sns">SNS Bank</option>
+                        <option value="fortis">FORTIS</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary btn-submit-fix">@lang('messages.continue')</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
