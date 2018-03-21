@@ -95,7 +95,7 @@
 
     </div>
     <div class="col-md-2">
-      Sidebar right
+
     </div>
   </div>
 </div>
