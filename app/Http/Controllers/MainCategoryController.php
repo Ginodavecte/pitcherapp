@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Maincategory;
 use App\Product;
+use App\Color;
+use App\Brand;
+use App\Size;
 use Illuminate\Http\Request;
 
 class MainCategoryController extends Controller
@@ -13,12 +16,22 @@ class MainCategoryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id)
     {
-      //$categories = Maincategory::with('products', 'colors')->get();
-      $products = Product::with('maincategories', 'colors', 'sizes')->get();
-      return $products[0];
-      return view('categories.index');
+      // colors
+      $colors = Color::all();
+      // brands
+      $brands = Brand::all();
+      // maincategories
+      $categories = Maincategory::all();
+      // size
+      $sizes = Size::all();
+
+      $products = Product::find($id)->with('maincategories', 'colors', 'sizes', 'images', 'brands')->paginate(10);
+      return $products;
+      //return $products[1];
+      //dd($products[0]->brands->brand_name);
+      return view('categories.index', compact('products'));
     }
 
     /**
@@ -51,7 +64,25 @@ class MainCategoryController extends Controller
 
     public function show($id)
     {
-       //
+      // colors
+      $colors = Color::all();
+      // brands
+      $brands = Brand::all();
+      // maincategories
+      $categories = Maincategory::all();
+      // size
+      $sizes = Size::all();
+
+
+
+      $categories = Maincategory::find($id);
+      //$products = $categories->products;
+
+
+
+      //return $categories;
+      //dd($products[0]->brands->brand_name);
+      return view('categories.index', compact('categories','colors','brands','sizes'));
     }
 
     /**

@@ -17,4 +17,12 @@ class Product extends Model
   public function sizes(){
     return $this->belongsToMany('App\Size');
   }
+
+  public function images(){
+    return $this->belongsToMany('App\Product_img');
+  }
+
+  public function brands(){
+    return $this->belongsToMany('App\Brand');
+  }
 }

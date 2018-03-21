@@ -15,7 +15,7 @@
       <div class="row">
         <div class="col-md">
           <div class="row">
-            <h1 class="my-4">Nike schoenen</h1>
+            <h1 class="my-4">{{ $categories->name }}</h1>
           </div>
         </div>
         <div class="col-md">
@@ -26,11 +26,19 @@
         </div>
       </div>
 
-      <div class="row" id="product_block">
+      <div class="row" id="product_block"><!--Product block -->
+        @foreach($categories->products as $product)
+
+
         <div class="col-lg-3 col-md-4 col-sm-6 filter nike white shoes">
+
           <img src="http://placehold.it/700x400" alt="img" class="img-thumbnail">
           <div class="card-body">
-            <div class="row"> <p>Nike air 1 - White</p> </div>
+            <div class="row">
+
+
+            </div>
+            <div class="row"> <p>{{ $product->title }}</p> </div>
             <div class="row">
               <p>
                 <i class="far fa-star"></i>
@@ -40,7 +48,7 @@
                 <i class="far fa-star"></i>
               </p>
             </div>
-            <div class="row"> <p>Price</p> </div>
+            <div class="row"> <p>{{ $product->price }}</p> </div>
             <div class="row">
               <div class="btn-group" role="group" aria-label="Basic example">
                 <button type="button" class="btn btn-success">Cart</button>
@@ -49,78 +57,11 @@
             </div>
           </div>
         </div>
+        @endforeach
+      </div><!--End Product block -->
 
-        <div class="col-lg-3 col-md-4 col-sm-6 filter adidas blue shorts">
-          <img src="http://placehold.it/700x400" alt="img" class="img-thumbnail">
-          <div class="card-body">
-            <div class="row"> <p>Adidas - Blue - short</p> </div>
-            <div class="row">
-              <p>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </p>
-            </div>
-            <div class="row"> <p>Price</p> </div>
-            <div class="row">
-              <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-success">Cart</button>
-                <button type="button" class="btn btn-info">Wishlist</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-6 filter nike black shoes">
-          <img src="http://placehold.it/700x400" alt="img" class="img-thumbnail">
-          <div class="card-body">
-            <div class="row"> <p>Nike air 1 - black</p> </div>
-            <div class="row">
-              <p>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </p>
-            </div>
-            <div class="row"> <p>Price</p> </div>
-            <div class="row">
-              <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-success">Cart</button>
-                <button type="button" class="btn btn-info">Wishlist</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-6 filter filla red shirts">
-          <img src="http://placehold.it/700x400" alt="img" class="img-thumbnail">
-          <div class="card-body">
-            <div class="row"> <p>Filla - red - shirt</p> </div>
-            <div class="row">
-              <p>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </p>
-            </div>
-            <div class="row"> <p>Price</p> </div>
-            <div class="row">
-              <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-success">Cart</button>
-                <button type="button" class="btn btn-info">Wishlist</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row" id="product_list">
+      <div class="row" id="product_list"><!--Prodcut list -->
+        @foreach($categories->products as $product)
         <div class="col-lg-12 col-md-12 col-sm-12 mb-3  filter nike white shoes">
           <div class="panel panel-default">
             <div class="panel-body">
@@ -129,7 +70,7 @@
                   <img src="http://placehold.it/700x400" alt="img" class="img-thumbnail">
                 </div>
                 <div class="col-md-5">
-                  <div class="row"> <p>nike white shoes</p> </div>
+                  <div class="row"> <p>{{ $product->title }} - {{ $product->price }}</p> </div>
                   <div class="row">
                     <p>
                       <i class="far fa-star"></i>
@@ -139,7 +80,7 @@
                       <i class="far fa-star"></i>
                     </p>
                   </div>
-                  <div class="row">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui gravida, rhoncus orci ut, bibendum erat. Pellentesque sollicitudin varius.</div>
+                  <div class="row"> {{ $product->short_description }}</div>
                 </div>
                 <div class="col-md-3">
                   <div class="row"><button type="button" class="btn btn-success">Add to cart</button></div>
@@ -149,94 +90,9 @@
             </div>
           </div>
         </div>
+        @endforeach
+      </div><!--End prodcut list -->
 
-        <div class="col-lg-12 col-md-12 col-sm-12 mb-3  filter adidas black shorts">
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <div class="row">
-                <div class="col-md-4">
-                  <img src="http://placehold.it/700x400" alt="img" class="img-thumbnail">
-                </div>
-                <div class="col-md-5">
-                  <div class="row"> <p>adidas black shorts</p> </div>
-                  <div class="row">
-                    <p>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                    </p>
-                  </div>
-                  <div class="row">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui gravida, rhoncus orci ut, bibendum erat. Pellentesque sollicitudin varius.</div>
-                </div>
-                <div class="col-md-3">
-                  <div class="row"><button type="button" class="btn btn-success">Add to cart</button></div>
-                  <div class="row"><button type="button" class="btn btn-info">Add to wishlist</button></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-12 col-md-12 col-sm-12 mb-3 filter filla white shoes">
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <div class="row">
-                <div class="col-md-4">
-                  <img src="http://placehold.it/700x400" alt="img" class="img-thumbnail">
-                </div>
-                <div class="col-md-5">
-                  <div class="row"> <p>Nike air max 1</p> </div>
-                  <div class="row">
-                    <p>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                    </p>
-                  </div>
-                  <div class="row">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui gravida, rhoncus orci ut, bibendum erat. Pellentesque sollicitudin varius.</div>
-                </div>
-                <div class="col-md-3">
-                  <div class="row"><button type="button" class="btn btn-success">Add to cart</button></div>
-                  <div class="row"><button type="button" class="btn btn-info">Add to wishlist</button></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-12 col-md-12 col-sm-12 mb-3 filter nike red shirts">
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <div class="row">
-                <div class="col-md-4">
-                  <img src="http://placehold.it/700x400" alt="img" class="img-thumbnail">
-                </div>
-                <div class="col-md-5">
-                  <div class="row"> <p>Nike red shirts</p> </div>
-                  <div class="row">
-                    <p>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                    </p>
-                  </div>
-                  <div class="row">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui gravida, rhoncus orci ut, bibendum erat. Pellentesque sollicitudin varius.</div>
-                </div>
-                <div class="col-md-3">
-                  <div class="row"><button type="button" class="btn btn-success">Add to cart</button></div>
-                  <div class="row"><button type="button" class="btn btn-info">Add to wishlist</button></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
     <div class="col-md-2">
 
