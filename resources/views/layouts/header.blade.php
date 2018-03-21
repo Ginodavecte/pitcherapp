@@ -61,9 +61,9 @@
     <div class="row justify-content-center">
         <div id="tabs">
           <ul>
-            <li class="nav-tab"><a href="#tabs-1">Voetballschoenen</a></li>
-            <li class="nav-tab"><a href="#tabs-2">Kleding</a></li>
-            <li class="nav-tab"><a href="#tabs-3">Accessoires</a></li>
+            <li class="nav-tab"><a href="#tabs-1">Shoes</a></li>
+            <li class="nav-tab"><a href="#tabs-2">Clothing</a></li>
+            <li class="nav-tab"><a href="#tabs-3">Accessories</a></li>
           </ul>
 
           <div id="tabs-1">
@@ -136,7 +136,7 @@
 
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="/">Home</a></li>
-      <li class="breadcrumb-item"><a href="/categories">Category</a></li>
-      <li class="breadcrumb-item active"><a href="/product">Product</a></li>
+      <li class="breadcrumb-item"><a href="/categories/1">Category</a></li>
+      <li class="breadcrumb-item active"><a href="/products/1">Product</a></li>
     </ol>
   </div>

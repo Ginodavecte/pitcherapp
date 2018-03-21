@@ -19,12 +19,12 @@ class CreateProductsTable extends Migration
             $table->string('slug')->unique();
             $table->string('price');
             $table->string('suggested_retail_price');
-            $table->string('subcatid');
-            $table->string('subcategory');
             $table->string('vat');
             $table->string('size');
             $table->string('weight');
+            $table->string('status');
             $table->string('description');
+            $table->string('short_description');
             $table->string('barcode');
             $table->timestamps();
         });
