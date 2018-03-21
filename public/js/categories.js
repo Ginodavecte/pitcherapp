@@ -21,6 +21,4 @@ $(document).ready(function(){
       $(".filter").not("."+value).hide(1000);
       $(".filter").filter("."+value).show(1000);
     }
-
   });
-});
