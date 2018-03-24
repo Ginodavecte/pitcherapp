@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   $("#block").click(function(){
     $("#product_list").hide(1000);
     $("#product_block").show(1000);
@@ -10,9 +11,7 @@ $(document).ready(function(){
   });
 
 
-
-
-/* Product filter */
+  /* Product filter */
   $(".button").click(function(){
     var value = $(this).attr("data-filter");
     if(value == "all"){
@@ -22,3 +21,4 @@ $(document).ready(function(){
       $(".filter").filter("."+value).show(1000);
     }
   });
+});

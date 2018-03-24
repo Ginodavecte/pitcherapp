@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('styles')
-  <link href="{{ asset('css/categories.css') }}" rel="stylesheet">
+<link href="{{ asset('css/categories.css') }}" rel="stylesheet">
 @endsection
 
 @section('content')
@@ -15,7 +15,7 @@
       <div class="row">
         <div class="col-md">
           <div class="row">
-            <h1 class="my-4">{{ $categories->name }}</h1>
+            <h1 class="my-4">{{ $category->name }}</h1>
           </div>
         </div>
         <div class="col-md">
@@ -27,77 +27,108 @@
       </div>
 
       <div class="row" id="product_block"><!--Product block -->
-        @foreach($categories->products as $product)
+        @foreach($category->products as $product)
+
+        <div class="col-lg-3 col-md-4 col-sm-6 filter
+        @foreach ($product->colors as $value)
+        {{ $value->name }}
+        @endforeach
+
+        @foreach ($product->sizes as $value)
+        {{ $value->name }}
+        @endforeach
+
+        @foreach ($product->brands as $value)
+        {{ $value->name }}
+        @endforeach
+
+        @foreach ($product->maincategories as $value)
+        {{ $value->name }}
+        @endforeach
+        ">
+        <img src="http://placehold.it/700x400" alt="img" class="img-thumbnail">
+        <div class="card-body">
+          <div class="row">
 
 
-        <div class="col-lg-3 col-md-4 col-sm-6 filter nike white shoes">
-
-          <img src="http://placehold.it/700x400" alt="img" class="img-thumbnail">
-          <div class="card-body">
-            <div class="row">
-
-
-            </div>
-            <div class="row"> <p>{{ $product->title }}</p> </div>
-            <div class="row">
-              <p>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </p>
-            </div>
-            <div class="row"> <p>{{ $product->price }}</p> </div>
-            <div class="row">
-              <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-success">Cart</button>
-                <button type="button" class="btn btn-info">Wishlist</button>
-              </div>
+          </div>
+          <div class="row"> <p>{{ $product->title }}</p> </div>
+          <div class="row">
+            <p>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </p>
+          </div>
+          <div class="row"> <p>{{ $product->price }}</p> </div>
+          <div class="row">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-success">Cart</button>
+              <button type="button" class="btn btn-info">Wishlist</button>
             </div>
           </div>
         </div>
-        @endforeach
-      </div><!--End Product block -->
+      </div>
 
-      <div class="row" id="product_list"><!--Prodcut list -->
-        @foreach($categories->products as $product)
-        <div class="col-lg-12 col-md-12 col-sm-12 mb-3  filter nike white shoes">
-          <div class="panel panel-default">
-            <div class="panel-body">
+      @endforeach
+    </div><!--End Product block -->
+
+    <div class="row" id="product_list"><!--Prodcut list -->
+      @foreach($category->products as $product)
+      <div class="col-lg-12 col-md-12 col-sm-12 mb-3  filter
+      @foreach ($product->colors as $value)
+      {{ $value->name }}
+      @endforeach
+
+      @foreach ($product->sizes as $value)
+      {{ $value->name }}
+      @endforeach
+
+      @foreach ($product->brands as $value)
+      {{ $value->name }}
+      @endforeach
+
+      @foreach ($product->maincategories as $value)
+      {{ $value->name }}
+      @endforeach
+      ">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="http://placehold.it/700x400" alt="img" class="img-thumbnail">
+            </div>
+            <div class="col-md-5">
+              <div class="row"> <p>{{ $product->title }} - {{ $product->price }}</p> </div>
               <div class="row">
-                <div class="col-md-4">
-                  <img src="http://placehold.it/700x400" alt="img" class="img-thumbnail">
-                </div>
-                <div class="col-md-5">
-                  <div class="row"> <p>{{ $product->title }} - {{ $product->price }}</p> </div>
-                  <div class="row">
-                    <p>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                    </p>
-                  </div>
-                  <div class="row"> {{ $product->short_description }}</div>
-                </div>
-                <div class="col-md-3">
-                  <div class="row"><button type="button" class="btn btn-success">Add to cart</button></div>
-                  <div class="row"><button type="button" class="btn btn-info">Add to wishlist</button></div>
-                </div>
+                <p>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </p>
               </div>
+              <div class="row"> {{ $product->short_description }}</div>
+            </div>
+            <div class="col-md-3">
+              <div class="row"><button type="button" class="btn btn-success">Add to cart</button></div>
+              <div class="row"><button type="button" class="btn btn-info">Add to wishlist</button></div>
             </div>
           </div>
         </div>
-        @endforeach
-      </div><!--End prodcut list -->
-
+      </div>
     </div>
-    <div class="col-md-2">
+    @endforeach
+  </div><!--End prodcut list -->
 
-    </div>
-  </div>
+</div>
+<div class="col-md-2">
+
+</div>
+</div>
 </div>
 <div class="container">
   <!-- Pagination -->

@@ -20,7 +20,6 @@ class CreateProductsTable extends Migration
             $table->string('price');
             $table->string('suggested_retail_price');
             $table->string('vat');
-            $table->string('size');
             $table->string('weight');
             $table->string('status');
             $table->string('description');

@@ -8,9 +8,9 @@
     </div>
     <div id="cateories-menu" class="collapse show">
       <ul class="list-group">
-        <li class="list-group-item button" data-filter="shoes">Shoes</li>
-        <li class="list-group-item button" data-filter="shirts">Shirts</li>
-        <li class="list-group-item button" data-filter="shorts">shorts</li>
+        @foreach($categories as $category)
+        <li class="list-group-item button" data-filter="{{ $category->name }}">{{ $category->name }}</li>
+        @endforeach
       </ul>
 
     </div>
@@ -24,9 +24,9 @@
     </div>
     <div id="brands-menu" class="collapse">
       <ul class="list-group">
-        <li class="list-group-item button" data-filter="nike">Nike</li>
-        <li class="list-group-item button" data-filter="adidas">Adidas</li>
-        <li class="list-group-item button" data-filter="filla">Filla</li>
+        @foreach($brands as $brand)
+        <li class="list-group-item button" data-filter="{{$brand->name}}">{{$brand->name}}</li>
+        @endforeach
       </ul>
     </div>
   </div>
@@ -39,10 +39,9 @@
     </div>
     <div id="color-menu" class="collapse">
         <ul class="list-group">
-          <li class="list-group-item button" data-filter="blue">Blue</li>
-          <li class="list-group-item button" data-filter="black">Black</li>
-          <li class="list-group-item button" data-filter="red">Red</li>
-          <li class="list-group-item button" data-filter="white">white</li>
+          @foreach($colors as $color)
+            <li class="list-group-item button" data-filter="{{$color->name}}">{{$color->name}}</li>
+          @endforeach
         </ul>
 
     </div>
@@ -56,9 +55,9 @@
     </div>
     <div id="size-menu" class="collapse">
       <ul class="list-group">
-        <li class="list-group-item">Size 1</li>
-        <li class="list-group-item">Size 2</li>
-        <li class="list-group-item">Size 3</li>
+        @foreach($sizes as $size)
+          <li class="list-group-item button" data-filter="{{$size->name}}">{{$size->name}}</li>
+        @endforeach
       </ul>
     </div>
   </div>

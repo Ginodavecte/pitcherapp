@@ -31,9 +31,6 @@ class SizeTableSeeder extends Seeder
           'name' => '44'
         ]);
         Size::create([
-          'name' => '44'
-        ]);
-        Size::create([
           'name' => '45'
         ]);
         Size::create([
