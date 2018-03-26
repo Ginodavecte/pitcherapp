@@ -44,9 +44,13 @@ class ProductController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show(Product $product)
+    public function show($id)
     {
-        //
+        $product = Product::find($id)->with('maincategories','sizes','colors')->first();
+
+
+        return $product;
+        // return view('products.show', compact('product'));
     }
 
     /**
