@@ -24,8 +24,8 @@
 
     <div class="container">
 
-      <p><h2 style="text-align:left;">Product Name (Nike airmax)</h2></p>
-      
+      <p><h2 style="text-align:left;">{{ $product->title }}</h2></p>
+
       <div class="row">
 
       <div class="gallery col-md-6">
@@ -45,29 +45,27 @@
    <div class="col-md-6">
 
 
-       <div class="product-title">Corsair GS600 600 Watt PSU</div>
+       <div class="product-title">{{ $product->title }}</div>
        <div class="product-desc">The Corsair Gaming Series GS600 is the ideal price/performance choice for mid-spec gaming PC</div>
        <div class="product-rating"><i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star gold"></i> <i class="fa fa-star-o"></i> </div>
        <hr>
-       <div class="product-price">$ 1234.00</div>
+       <div class="product-price">€ {{ $product->price }}</div>
        <div class="product-stock">In Stock</div>
        <hr>
        <div class="product-size">
-         <select>
-           <option selected disabled>Select size</option>
-           <option value="s">S</option>
-           <option value="m">M</option>
-           <option value="l">L</option>
-           <option value="xl">XL</option>
-         </select>
+           <select>
+             <option selected disabled>Select size</option>
+                @foreach($product->sizes as $size)
+                  <option value="{{ $size->id }}">{{ $size->size_name }} </option>
+                @endforeach
+           </select>
        </div><br>
-       <div>
+       <div class="product-color">
          <select>
            <option selected disabled>Select color</option>
-           <option value="red">Red</option>
-           <option value="blue">Blue</option>
-           <option value="yellow">Yellow</option>
-           <option value="Orange">Orange</option>
+              @foreach($product->colors as $color)
+                <option value="{{ $color->id }}">{{ $color->color_name }} </option>
+              @endforeach
          </select>
        </div>
        <hr>
@@ -95,16 +93,16 @@
 
 <div id="Description" class="tabcontent">
  <h3>Description</h3>
- <p>This is the part where the product will be discribed with a beutifull story</p>
+ <p>{{ $product->description }}</p>
 </div>
 
 <div id="Specs" class="tabcontent">
  <h3>Specs</h3>
  <p>Here is where you find a overview of the product like this.</p>
  <ul>
-   <li> Real nikies </li>
-   <li> Good quality</li>
-   <li> Better then the rest</li>
+   <li> Category : {{ $product->subcategory }} </li>
+   <li> Weight : {{ $product->weight }}</li>
+   <li> BTW(vat) : {{ $product->vat }}</li>
    <li> Can be worn in the rain</li>
    <li> No where else this price</li>
  </ul>

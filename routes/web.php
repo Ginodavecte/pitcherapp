@@ -14,13 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
-//Single prodct page
-Route::get('/product', function(){
-  return view('products/index');
-});
+ 
 //Shopping cart page
 Route::get('/shopcart', function(){
   return view('/shopcart');
+});
+//AdminPage(Product Management)
+Route::get('/adminPM', function(){
+  return view('/admin/product-management');
 });
 
 
@@ -28,7 +29,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('/categories', 'MainCategoryController');
+Route::resource('/categories', 'CategoriesController');
 Route::resource('/products', 'ProductController');
 
 Route::resource('/contact', 'ContactController');
