@@ -41,6 +41,7 @@ Route::get('/billingdata', function () {
 Route::get('/profile', function () {
     return view('/account/profile');
 });
+
 Route::get('/orders', function () {
     return view('/account/orders');
 });
