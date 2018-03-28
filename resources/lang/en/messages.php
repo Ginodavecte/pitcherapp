@@ -65,7 +65,9 @@ return  [
   'continue_shopping' => 'Continue Shopping',
   'next_step_payment' => 'Next Step (PAYMENT)',
 
-
+  //profile page
+  'change' =>'Change',
+  'deleteacc' => 'Delete account',
 ];
 
 
