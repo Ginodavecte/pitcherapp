@@ -14,7 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
- 
+
 //Shopping cart page
 Route::get('/shopcart', function(){
   return view('/shopcart');
@@ -29,7 +29,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('/categories', 'CategoriesController');
+Route::resource('/categories', 'MainCategoryController');
 Route::resource('/products', 'ProductController');
 
 Route::resource('/contact', 'ContactController');
