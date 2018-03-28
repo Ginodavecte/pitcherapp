@@ -49,10 +49,3 @@ Route::get('/orders', function () {
 Route::get('/wishlist', function () {
     return view('/account/wishlist');
 });
-
-Route::get('/orders', function () {
-    return view('/account/orders');
-});
-Route::get('/wishlist', function () {
-    return view('/account/wishlist');
-});
