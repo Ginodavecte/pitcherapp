@@ -36,3 +36,7 @@ Route::resource('/contact', 'ContactController');
 Route::get('/billingdata', function () {
     return view('billingdata');
 });
+
+Route::get('/profile', function () {
+    return view('/account/profile');
+});
