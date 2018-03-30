@@ -52,3 +52,6 @@ Route::get('/wishlist', function () {
 Route::get('/orders', function () {
     return view('/account/orders');
 });
+Route::get('/wishlist', function () {
+    return view('/account/wishlist');
+});
