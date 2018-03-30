@@ -71,6 +71,9 @@ return  [
 
   //orders page
   'reorder' =>'Re-Order',
+
+  //wishlist page
+  'addcart' =>'Add to cart',
 ];
 
 

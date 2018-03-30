@@ -12,7 +12,8 @@
     <nav id="sidebar" class="h-100 d-inline-block">
       <!-- Sidebar Header -->
       <div class="sidebar-header">
-        <h3>Shortcuts</div>
+        <h3>Shortcuts</h3>
+      </div>
 
 
           <!-- Sidebar Links -->
@@ -126,17 +127,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="d-flex align-items-end flex-column" style="height: 200px;">
-
-  <div class="mt-auto p-2">
-    <button type="submit" class="btn btn-outline-primary">@lang('messages.deleteacc')
-    </button>
-  </div>
-</div> -->
-      <!-- <div class="row">
-        <button type="submit" class="btn btn-outline-primary">@lang('messages.deleteacc')
-        </button>
-      </div> -->
     </div>
     <div class="d-flex flex-row-reverse">
   <div class="p-2">
@@ -146,12 +136,6 @@
   </div>
     </div>
   </div>
-  <!-- <div class="d-flex flex-row-reverse sb">
-<div class="p-2">
-  <button type="submit" class="btn btn-outline-primary">@lang('messages.deleteacc')
-  </button>
-</div>
-</div> -->
 </div>
 
 @endsection
