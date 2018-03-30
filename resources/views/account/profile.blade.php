@@ -27,12 +27,12 @@
 
   </div>
 
-  <div class="container" style="background:#424a5d">
+  <div class="container" style="background:#dee2e6">
 
     <div class="d-flex flex-column">
       <div class="d-flex flex-row">
       <div class="col p-3">
-        <div class="card h-100">
+        <div class="card h-100" style="border-color: #394263;">
           <div class="white-panel">
             <div class="white-header">
               <h5>USER DATA</h5>
@@ -71,7 +71,7 @@
 
 
       <div class="col p-3">
-        <div class="card h-100">
+        <div class="card h-100" style="border-color: #394263;">
           <div class="white-panel">
             <div class="white-header">
               <h5>BANKACCOUNT DATA</h5>
@@ -114,7 +114,7 @@
 
 
       <div class="col p-3">
-        <div class="card h-100">
+        <div class="card h-100" style="border-color: #394263;">
           <div class="white-panel">
             <div class="white-header">
               <h5>USER PHOTO</h5>
