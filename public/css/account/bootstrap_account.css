@@ -13,23 +13,6 @@
     margin-left: -250px;
 }
 
-a[data-toggle="collapse"] {
-    position: relative;
-}
-
-a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
-    content: '\e259';
-    display: block;
-    position: absolute;
-    right: 20px;
-    /* font-family: 'Glyphicons Halflings'; */
-    font-size: 0.6em;
-}
-
-a[aria-expanded="true"]::before {
-    content: '\e260';
-}
-
 @media (max-width: 768px) {
     #sidebar {
         margin-left: -250px;
@@ -40,16 +23,13 @@ a[aria-expanded="true"]::before {
 }
 
 
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-
-
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Lato","Helvetica Neue","Arial","Helvetica",sans-serif;
     background: #fafafa;
+
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
@@ -108,14 +88,12 @@ ul ul a {
 	text-align: center;
 	background: #ffffff;
   color: #000000;
-	/* color: #ccd1d9; */
 }
 .white-header {
 	background: #f4f4f4;
 	padding: 3px;
 	margin-bottom: 15px;
   color: #000000;
-	/* color: #808080; */
 }
 .nav{
   background-color: #ffffff;
@@ -124,40 +102,3 @@ ul ul a {
     padding-top: 25px;
     padding-bottom: 25px;
 }
-
-/* .nav-item {
-    border-color: #343a40; */
-    /* border-right: 1px solid silver;
-} */
-/* .card{
-  background: #424a5d;
-} */
-/* .container{
-  background: #f2f2f2;
-} */
-/* .mtbox {
-	margin-top: 80px;
-	margin-bottom: 40px;
-}
-
-.box1 {
-	padding: 15px;
-	text-align: center;
-	color: #989898;
-	border-bottom: 1px solid #989898;
-}
-
-.box1 span {
-	font-size: 50px;
-
-}
-
-.box1 h3 {
-	text-align: center;
-}
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-} */

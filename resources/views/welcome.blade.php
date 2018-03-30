@@ -1,11 +1,12 @@
 @extends('layouts.app')
 
+@section('styles')
+    <link href="{{ asset('css/productpage/related-product-slider.css') }}" type="text/css" rel="stylesheet">
+@endsection
+
 @section('content')
 <div class="container">
 
-  @section('styles')
-      <link href="{{ asset('css/productpage/related-product-slider.css') }}" type="text/css" rel="stylesheet">
-  @endsection
 
   <br>
     <p> <h3 style="text-align:center;">New products</h3> </p>
@@ -103,11 +104,9 @@
                     </div>
                   </div>
                 </div>
-                <!-- /.row -->
 
                 @section('scripts')
                 <script type="text/javascript" src="{{ asset('js/homepage/new-product-slider.js') }}"></script>
-                <!-- <script type="text/javascript" src="{{ asset('js/productpage/related-product-slider.js') }}"></script> -->
                 @endsection
 
 

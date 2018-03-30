@@ -14,7 +14,8 @@
     <nav id="sidebar" class="h-100 d-inline-block">
       <!-- Sidebar Header -->
       <div class="sidebar-header">
-        <h3>Shortcuts</div>
+        <h3>Shortcuts</h3>
+      </div>
 
 
           <!-- Sidebar Links -->
