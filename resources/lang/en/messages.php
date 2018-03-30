@@ -68,6 +68,9 @@ return  [
   //profile page
   'change' =>'Change',
   'deleteacc' => 'Delete account',
+
+  //orders page
+  'reorder' =>'Re-Order',
 ];
 
 

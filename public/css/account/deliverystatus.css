@@ -1,0 +1,24 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css";
+
+.form-horizontal{margin-bottom:50px}
+.order-status{margin-top:150px;position:relative;margin-bottom:150px}
+.order-status-timeline{height:12px;border:1px solid #aaa;border-radius:7px;background:#eee;box-shadow:0px 0px 5px 0px #C2C2C2 inset}.order-status-timeline .order-status-timeline-completion{height:8px;margin:1px;border-radius:7px;background:#cf7400;width:0px}
+.order-status-timeline .order-status-timeline-completion.c1{width:20%}
+.order-status-timeline .order-status-timeline-completion.c2{width:40%}
+.order-status-timeline .order-status-timeline-completion.c3{width:60%}
+.order-status-timeline .order-status-timeline-completion.c4{width:80%}
+.order-status-timeline .order-status-timeline-completion.c5{width:100%}
+.image-order-status{border:1px solid #ddd;padding:7px;box-shadow:0px 0px 10px 0px #999;background-color:#fdfdfd;position:absolute;margin-top:-35px}.image-order-status.disabled{filter:url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale");filter:grayscale(100%);-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:gray;}
+.image-order-status.active{box-shadow:0px 0px 10px 0px #cf7400}.image-order-status.active .status{color:#cf7400;text-shadow:0px 0px 1px #777}
+.image-order-status .icon{height:40px;width:40px;background-size:contain;background-position:no-repeat}
+.image-order-status .status{position:absolute;text-shadow:1px 1px #eee;color:#333;transform:rotate(-30deg);-webkit-transform:rotate(-30deg);width:180px;top:-50px;left:50px}.image-order-status .status:before{font-family:FontAwesome;content:"\f053";padding-right:5px}
+.image-order-status-new{left:0}.image-order-status-new .icon{}
+.image-order-status-active{left:20%}.image-order-status-active .icon{}
+.image-order-status-intransit{left:40%}.image-order-status-intransit .icon{}
+.image-order-status-delivered{left:60%}.image-order-status-delivered .icon{}
+.image-order-status-reviewed{left:80%}.image-order-status-reviewed .icon{}
+  .image-order-status-reviewed .status{top:85px;left:-180px;transform:rotate(-30deg);-webkit-transform:rotate(-30deg);text-align:right}.image-order-status-reviewed .status:before{display:none}
+  .image-order-status-reviewed .status:after{font-family:FontAwesome;content:"\f054";padding-left:5px;vertical-align:middle}
+.image-order-status-completed{right:0px}.image-order-status-completed .icon{}
+.image-order-status-completed .status{top:85px;left:-180px;transform:rotate(-30deg);-webkit-transform:rotate(-30deg);text-align:right}.image-order-status-completed .status:before{display:none}
+.image-order-status-completed .status:after{font-family:FontAwesome;content:"\f054";padding-left:5px;vertical-align:middle}

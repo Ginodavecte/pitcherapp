@@ -17,7 +17,7 @@
 
           <!-- Sidebar Links -->
           <ul class="list-unstyled components">
-              <li class="px-2"><a href="#"><i class="far fa-list-alt"></i> Orders</a></li>
+              <li class="px-2"><a href="/orders"><i class="far fa-list-alt"></i> Orders</a></li>
               <li class="px-2"><a href="#"><i class="fa fa-gift"></i> Wishlist</a></li>
               <li class="active px-2"><a href="#"><i class="fa fa-user"></i> Profile</a></li>
               <li class="px-2"><a href="#"><i class="fa fa-shopping-cart"></i> Shopcart</a></li>

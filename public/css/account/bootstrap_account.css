@@ -117,6 +117,18 @@ ul ul a {
   color: #000000;
 	/* color: #808080; */
 }
+.nav{
+  background-color: #ffffff;
+}
+.nav>li {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* .nav-item {
+    border-color: #343a40; */
+    /* border-right: 1px solid silver;
+} */
 /* .card{
   background: #424a5d;
 } */
