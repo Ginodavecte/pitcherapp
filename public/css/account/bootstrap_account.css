@@ -44,7 +44,7 @@ a, a:hover, a:focus {
 
 #sidebar {
     /* don't forget to add all the previously mentioned styles here too */
-    background: #424a5d;
+    background: #394263;
     color: #fff;
     transition: all 0.3s;
     font-size: 12px;
@@ -52,12 +52,12 @@ a, a:hover, a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #424a5d;
+    background: #394263;
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #424a5d;
+    border-bottom: 1px solid #394263;
 }
 
 #sidebar ul p {
@@ -88,12 +88,15 @@ ul ul a {
 	text-align: center;
 	background: #ffffff;
   color: #000000;
+  border-color: #007bff;
 }
 .white-header {
-	background: #f4f4f4;
+	/* background: #424a5d; */
+  /* background: #007bff; */
+  background: #394263;
 	padding: 3px;
 	margin-bottom: 15px;
-  color: #000000;
+  color: #fafafa;
 }
 .nav{
   background-color: #ffffff;
