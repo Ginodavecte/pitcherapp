@@ -43,7 +43,6 @@ a, a:hover, a:focus {
 }
 
 #sidebar {
-    /* don't forget to add all the previously mentioned styles here too */
     background: #394263;
     color: #fff;
     transition: all 0.3s;
@@ -91,8 +90,6 @@ ul ul a {
   border-color: #007bff;
 }
 .white-header {
-	/* background: #424a5d; */
-  /* background: #007bff; */
   background: #394263;
 	padding: 3px;
 	margin-bottom: 15px;
