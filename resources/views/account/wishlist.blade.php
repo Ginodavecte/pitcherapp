@@ -13,6 +13,16 @@
   <div class="wrapper">
 
     <nav id="sidebar" class="h-100 d-inline-block">
+      <!-- Sidebar user image -->
+      <div class="row sidebar-header" style="background:rgba(255,255,255,.1)">
+        <div class="col">
+          <img src="{{ URL::to('/') }}/img/profilepage/original.png.jpeg" class="img-fluid rounded-circle" style="border:solid">
+        </div>
+        <div class="col mx-auto my-auto">
+          <p class="text-white"><h5>Jack van Puffelen</h5><p>
+        </div>
+      </div>
+
       <!-- Sidebar Header -->
       <div class="sidebar-header">
         <h3>Shortcuts</h3>
